@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #eee;
+  }
+  
+  .menu-icon,
+  .cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .search-bar input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    padding: 20px;
+    background: #f9f9f9;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    
+  }
+  
+  .booking-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 770px;
+    height: 330px;
+    max-width: 1400px;
+  }
+  
+  .booking-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin: 40px auto;
+    border-radius: 5px;
+  }
+  
+  .date-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .date-inputs input[type="date"] {
+    padding: 5px;
+    width: 45%;
+    
+  }
+  
+  .button-group button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #6db6e3;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .button-group button:hover {
+    background-color: #101268;
+  }
+  
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: center;
+    background: #eee;
+    padding: 10px;
+  }
+  
+  .footer-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .footer-btn.active {
+    background-color: #4da6ff;
+    color: white;
+    font-weight: bold;
+  }
+
+  .cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+a .cart-icon {
+    text-decoration: none;
+    color: inherit;
+}
+
+  
