@@ -30,19 +30,22 @@
     <a href="{{ route('infokamar1') }}">
       <img src="{{ asset('images/fotohotel1.jpeg') }}" alt="Deluxe Room">
     </a>
-      <h3>Kamar no 8</h3>
+      <h3>Kamar no 8</h3><p>
+        Rp. 1.300.000,00 / malam
     </div>
     <div class="kamar-card" data-nama="Superior Room">
     <a href="{{ route('infokamar2') }}">
       <img src="{{ asset('images/fotohotel2.jpeg') }}" alt="Superior Room">
     </a>
-      <h3>Kamar no 12</h3>
+      <h3>Kamar no 12</h3><p>
+        Rp. 800.000,00 / malam
     </div>
     <div class="kamar-card" data-nama="Suite Room">
     <a href="{{ route('infokamar3') }}">
       <img src="{{ asset('images/fotohotel3.jpeg') }}" alt="Suite Room">
     </a>
-      <h3>Kamar no 21</h3>
+      <h3>Kamar no 21</h3><p>
+       Rp. 600.000,00 / malam
     </div>
   </div>
 </main>

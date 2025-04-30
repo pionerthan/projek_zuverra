@@ -18,7 +18,8 @@
     </div>
 
     <div class="info-section">
-        <h2>Kamar no 8</h2>
+        <h2>Kamar no 8</h2><p>
+        Rp. 1.300.000,00 / malam
         <p id="deskripsi">Nikmati kenyamanan maksimal di Kamar Deluxe No. 8, pilihan sempurna untuk keluarga atau rombongan yang mencari ruang luas dan fasilitas premium. Kamar ini dilengkapi dengan dua tempat tidur queen size dan satu tempat tidur single, memberikan keleluasaan bagi hingga lima tamu. Dengan fasilitas kamar Fasilitas Kamar:<p>
 - Tempat tidur dengan linen berkualitas tinggi<br>
 - Desain interior modern dan elegan, dengan sentuhan seni kontemporer<br>

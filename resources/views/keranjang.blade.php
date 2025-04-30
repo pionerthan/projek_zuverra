@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <h2>Keranjang Pemesanan</h2>
-        <form id="formPemesanan" action="{{ route('pembayaran') }}" method="POST">
+        <form id="formPemesanan" action="{{ route('pemesanan.store') }}" method="POST">
             @csrf
         <div class="room-list">
             <div class="room-item">
@@ -25,7 +25,9 @@
 
         <div class="footer">
             <label><input type="checkbox" id="checkAll"> Semua</label>
+            <a href="{{ route('pemesanan') }}">
             <button id="pesanBtn" type="button">Pesan</button>
+        </a>
         </div>
     </div>
 

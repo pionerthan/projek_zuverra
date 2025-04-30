@@ -11,20 +11,20 @@
         <section class="hero-section">
             <div class="booking-form">
                 <h2>Formulir Pemesanan</h2>
-                <form id="formPemesanan" action="{{ route('pembayaran') }}" method="POST">
+                <form action="{{ route('pemesanan.store') }}" method="POST">
                     @csrf
-                    <input type="text" name="nama" placeholder="Masukkan nama lengkap" required>
-                    <input type="text" name="telepon" placeholder="Masukkan nomor telepon" required>
+                    <input type="text" name="nama_lengkap" placeholder="Masukkan nama lengkap" required>
+                    <input type="text" name="nomor_telepon" placeholder="Masukkan nomor telepon" required>
                     <input type="email" name="email" placeholder="Masukkan email" required>
                     
                     <div class="date-inputs">
-                        <input type="date" name="tanggal_masuk" required>
+                        <input type="date" name="tanggal_checkin" required>
                         <span> - </span>
-                        <input type="date" name="tanggal_keluar" required>
+                        <input type="date" name="tanggal_checkout" required>
                     </div>
 
                     <label for="metode">Metode pembayaran yang dipakai</label>
-                    <select name="metode" id="metode" required>
+                    <select name="metode_pembayaran" id="metode_pembayaran" required>
                         <option value="e-wallet">E-Wallet</option>
                         <option value="transfer">Transfer Bank</option>
                         <option value="kartu">Kartu Kredit</option>

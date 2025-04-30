@@ -18,7 +18,8 @@
     </div>
 
     <div class="info-section">
-        <h2>Kamar no 21</h2>
+        <h2>Kamar no 21</h2><p>
+        Rp. 600.000,00 / malam
         <p id="deskripsi">Rasakan kemewahan dan kenyamanan dalam Suite Room No. 21, kamar eksklusif yang dirancang dengan elegansi modern dan suasana hangat. Suite ini menawarkan satu tempat tidur king size, area duduk pribadi, dan dekorasi interior bergaya kontemporer yang menenangkan. Dengan fasilitas<p>
 - Tempat tidur king size dengan bantal dan linen premium<br>
 - Sofa nyaman di sudut ruangan untuk bersantai atau menerima tamu<br>

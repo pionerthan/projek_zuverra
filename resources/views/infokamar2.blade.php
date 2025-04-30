@@ -18,7 +18,8 @@
     </div>
 
     <div class="info-section">
-        <h2>Kamar no 12</h2>
+        <h2>Kamar no 12</h2><p>
+        Rp. 800.000,00 / malam
         <p id="deskripsi">Temukan kesempurnaan dalam kenyamanan dan gaya di Kamar Superior No. 12, dirancang untuk para tamu yang menghargai ketenangan, pemandangan kota yang menakjubkan, dan desain modern yang elegan. Terletak di lantai atas, kamar ini menawarkan jendela besar panorama yang menghadap langsung ke cakrawala kota. Dengan fasilitas kamar: <p>
 - 1 tempat tidur king size dengan sprei berkualitas tinggi<br>
 - Spot duduk di jendela (window lounge) yang nyaman untuk bersantai sambil menikmati pemandangan<br>

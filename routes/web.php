@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PesananController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use App\Http\Controllers\PemesananController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -25,9 +26,17 @@ Route::get('/pencarian', function () {
     return view('pencarian');
 })->middleware(['auth', 'verified'])->name('pencarian');
 
+Route::get('/pemesanan', function () {
+    return view('pemesanan');
+})->middleware(['auth', 'verified'])->name('pemesanan');
+
 Route::post('/pembayaran', function () {
     return view('pembayaran');
 })->name('pembayaran');
+
+Route::post('/pemesanan', function () {
+    return view('pemesanan');
+})->name('pemesanan');
 
 Route::post('/pesanan', function () {
     return view('pesanan');
@@ -49,9 +58,10 @@ Route::get('/beranda', function () {
     return view('beranda');
 })->name('beranda');
 
-Route::get('/pesanan', function () {
-    return view('pesanan');
-})->name('pesanan');
+Route::get('/pemesanan', function () {
+    return view('pemesanan');
+})->name('pemesanan');
+
 
 Route::get('/kamarPesanan', function () {
     return view('kamarPesanan');
@@ -65,8 +75,21 @@ Route::get('/pesanan/kosong', function () {
     return view('pesanan_kosong'); 
 })->name('pesanan.kosong');
 
-
 Route::get('/pesanan-kosong', [PesananController::class, 'kosong'])->name('pesanan.kosong');
+
+Route::post('/pemesanan/store', [PemesananController::class, 'store'])->name('pemesanan.store');
+Route::get('/pesanan', [PemesananController::class, 'index'])->name('pesanan.index');
+
+
+Route::get('/pesanan', [PemesananController::class, 'index'])->name('pesanan');
+
+Route::post('/pemesanan', [PemesananController::class, 'store'])->name('pemesanan.store');
+
+Route::get('/pembayaran', [PemesananController::class, 'pembayaran'])->name('pembayaran');
+
+Route::get('/pemesanan', [PemesananController::class, 'pemesanan'])->name('pemesanan');
+
+Route::post('/pemesanan', [PemesananController::class, 'store'])->name('pemesanan');
 
 
 

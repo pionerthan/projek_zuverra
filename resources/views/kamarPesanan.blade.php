@@ -31,8 +31,8 @@
 - Meja kerja dan area makan kecil<br>
 - TV layar datar, AC, minibar, dan Wi-Fi cepat<p>
 Penataan ruang yang minimalis namun fungsional dengan suasana yang tenang dan privacy tinggi. Ideal untuk menikmati sunrise atau city lights di malam hari.<p>
-Check-in dijadwalkan pada 10 Mei 2025 pukul 14.00, dan check-out pada 12 Mei 2025 pukul 12.00.
-Total biaya pemesanan sebesar Rp 1.200.000, telah dibayarkan melalui metode GoPay.
+Check-in dijadwalkan pada 10 April 2025 pukul 14.00, dan check-out pada 12 April 2025 pukul 12.00.
+Total biaya pemesanan sebesar Rp 1.600.000, telah dibayarkan melalui metode GoPay.
 Terima kasih telah memesan bersama kami. Kami menantikan kedatangan Anda!
 </p></p>
         </div>
@@ -48,7 +48,12 @@ Terima kasih telah memesan bersama kami. Kami menantikan kedatangan Anda!
 <!-- Popup Modal -->
 <div id="popupModal" class="modal">
     <div class="modal-content">
+    <span id="closeModal">×</span>
         <p id="modalText">Konfirmasi?</p>
+
+        <div id="qrcode" style="margin: 10px auto; text-align: center; display: flex;
+    justify-content: center;"></div>
+
         <form id="popupForm">
             <input type="hidden" name="action" id="popupAction">
             <button type="submit">Ya</button>
@@ -61,5 +66,7 @@ Terima kasih telah memesan bersama kami. Kami menantikan kedatangan Anda!
     const pesananUrl = "{{ route('pesanan.kosong') }}"; 
 </script>
 <script src="{{ asset('js/script-kamarPesanan.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
 </body>
 </html>

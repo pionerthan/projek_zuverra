@@ -13,8 +13,22 @@ document.addEventListener('DOMContentLoaded', function () {
             modalText.textContent = `Yakin ingin melakukan tindakan "${currentAction}"?`;
             popupAction.value = currentAction;
             modal.style.display = 'flex';
+
+            const qrContainer = document.getElementById('qrcode');
+        qrContainer.innerHTML = ''; // Kosongkan dulu
+
+        if (currentAction === 'checkin' || currentAction === 'checkout') {
+            // Data untuk QR - bisa disesuaikan
+            const qrData = `Tindakan: ${currentAction.toUpperCase()}, User: {{ auth()->user()->name ?? 'Guest' }}, Waktu: ${new Date().toLocaleString()}`;
+            
+            new QRCode(qrContainer, {
+                text: qrData,
+                width: 150,
+                height: 150,
         });
+    }
     });
+});
 
     closeModalBtn.addEventListener('click', () => {
         modal.style.display = 'none';
